@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортивный магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1>Sportswear Store</h1>
+            <div id="category-selection">
+                <div class="category-button">
+                    <button data-category-id="1" data-product-type="Одежда">Одежда</button>
+                    <button data-category-id="2" data-product-type="Кроссовки">Кроссовки</button>
+                </div>
+                <div id="open-cart-container">
+                    <button id="open-cart">Корзина</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="content-container">
+            <div id="products"></div>
+            <div id="admin-login" >
+                <h2>Админ Панель</h2>
+                <input type="text" id="username" placeholder="Логин">
+                <input type="password" id="password" placeholder="Пароль">
+                <button id="login">Войти</button>
+            </div>
+            <div id="add-product" style="display: none;">
+                <h2>Добавить товар</h2>
+                <input type="text" id="product-name" placeholder="Название">
+                <textarea id="product-description" placeholder="Описание"></textarea>
+                <input type="number" id="product-price" placeholder="Цена">
+                <input type="text" id="product-image-url" placeholder="Путь до картинки">
+                <select id="product-category">
+                    <option value="1">Одежда</option>
+                    <option value="2">Кроссовки</option>
+                </select>
+                <button id="add">Добавить</button>
+                <button id="logout" style="display: none;">Выйти</button>
+                <table id="orders">
+                    <tr>
+                        <th>Номер</th>
+                        <th>Имя</th>
+                        <th>Телефон</th>
+                        <th>Почта</th>
+                        <th>Заказ</th>
+                        <th>Размер</th>
+                        <th>Статус</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

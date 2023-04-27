@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1>Sportswear Store</h1>
+            <div id="category-selection">
+                <button onclick="window.location.href='index.html'">Вернуться</button>
+            </div>
+        </div>
+    </nav>
+    <div class="content"> 
+        <div id="cart-content" class="content-container">
+            <div id="cart-container"></div>
+            <button id="clear-cart">Очистить корзину</button>
+            <form id="checkout-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="Имя" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="text" id="phone" name="Телефон" required>
+                
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="Почта" required>
+                
+                <button type="submit">Оформить заказ</button>
+            </form>   
+        </div>
+    </div> 
+</body>
+</html>
